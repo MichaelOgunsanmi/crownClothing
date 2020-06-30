@@ -10,7 +10,8 @@ const MenuItem = (props) => {
     };
 
     return (
-        <div className={`${styles.MenuItem} ${styles[size]}`} style={MenuItemStyles}>
+        <div className={`${styles.MenuItem} ${styles[size]}`}>
+            <div className={styles.backgroundImage} style={MenuItemStyles}/>
             <div className={styles.content}>
                 <h1 className={styles.title}>{title.toUpperCase()}</h1>
                 <span className={styles.subtitle}>SHOP NOW</span>
